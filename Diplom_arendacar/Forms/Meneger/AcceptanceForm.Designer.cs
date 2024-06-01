@@ -222,7 +222,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AcceptanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AcceptanceForm";
+            this.Text = "Принятие машины";
             this.Load += new System.EventHandler(this.AcceptanceForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

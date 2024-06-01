@@ -128,12 +128,7 @@ namespace Diplom_arendacar.Forms
 
         }
 
-        private void Manager_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            AuthorizationForm frm_logn = new AuthorizationForm();
-            frm_logn.Show();
-            this.Close();
-        }
+
 
         private void dgw_order_klinet_list_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -457,6 +452,12 @@ namespace Diplom_arendacar.Forms
 
             MessageBox.Show("Машина выдана клиенту");
             
+        }
+
+        private void Manager_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.OpenForms[0].Show();
+            this.Hide();
         }
     }
     
