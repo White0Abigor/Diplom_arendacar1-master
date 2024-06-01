@@ -554,9 +554,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl_add_user);
             this.Controls.Add(this.pnl_change_user);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Administratorr";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Administrator";
+            this.Text = "Администратор";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Administratorr_FormClosed);
             this.Load += new System.EventHandler(this.Administratorr_Load);
             this.panel1.ResumeLayout(false);
