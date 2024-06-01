@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CE22A84-3084-4503-BE4B-2F66E7B6F440}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diplom_arendacar</RootNamespace>
+    <AssemblyName>Diplom_arendacar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Administrator\AddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\AddCar.Designer.cs">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\AddDetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\AddDetal.Designer.cs">
+      <DependentUpon>AddDetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\ChangeCar1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\ChangeCar1.Designer.cs">
+      <DependentUpon>ChangeCar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\New_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\New_data.Designer.cs">
+      <DependentUpon>New_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\new_number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\new_number.Designer.cs">
+      <DependentUpon>new_number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\Recover_Access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\Recover_Access.Designer.cs">
+      <DependentUpon>Recover_Access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuyDetali.cs" />
+    <Compile Include="Forms\Klient\Histori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Klient\Histori.Designer.cs">
+      <DependentUpon>Histori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\BDetali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\BDetali.Designer.cs">
+      <DependentUpon>BDetali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Meneger\AcceptanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Meneger\AcceptanceForm.Designer.cs">
+      <DependentUpon>AcceptanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administrator\Administratorr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administrator\Administratorr.Designer.cs">
+      <DependentUpon>Administratorr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sistem\AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sistem\AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sistem\CaphcaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sistem\CaphcaForm.Designer.cs">
+      <DependentUpon>CaphcaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Klient\CreatyOrdersrClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Klient\CreatyOrdersrClient.Designer.cs">
+      <DependentUpon>CreatyOrdersrClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\end_detail_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\end_detail_info.Designer.cs">
+      <DependentUpon>end_detail_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Meneger\Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Meneger\Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\Master1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\Master1.Designer.cs">
+      <DependentUpon>Master1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sistem\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sistem\.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Klient\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Klient\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Klient\UserProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Klient\UserProfil.Designer.cs">
+      <DependentUpon>UserProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Administrator\AddCar.resx">
+      <DependentUpon>AddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\AddDetal.resx">
+      <DependentUpon>AddDetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\ChangeCar1.resx">
+      <DependentUpon>ChangeCar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\New_data.resx">
+      <DependentUpon>New_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\new_number.resx">
+      <DependentUpon>new_number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\Recover_Access.resx">
+      <DependentUpon>Recover_Access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klient\Histori.resx">
+      <DependentUpon>Histori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\BDetali.resx">
+      <DependentUpon>BDetali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Meneger\AcceptanceForm.resx">
+      <DependentUpon>AcceptanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administrator\Administratorr.resx">
+      <DependentUpon>Administratorr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sistem\AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sistem\CaphcaForm.resx">
+      <DependentUpon>CaphcaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klient\CreatyOrdersrClient.resx">
+      <DependentUpon>CreatyOrdersrClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\end_detail_info.resx">
+      <DependentUpon>end_detail_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Meneger\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\Master1.resx">
+      <DependentUpon>Master1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sistem\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klient\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klient\UserProfil.resx">
+      <DependentUpon>UserProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\визитка W1P л.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRmBdbGWq7NUtCnMpZBFyjnR7mfJivTPYamZnP-j0sgGoPrsNQnQzJXt_RTsMsYWpQCCp3XP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRmBdbGWq7NUtCnMpZBFyjnR7mfJivTPYamZnP-j0sgGoPrsNQnQzJXt_RTsMsYWpQCCp3XP1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
