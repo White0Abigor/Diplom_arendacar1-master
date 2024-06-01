@@ -31,9 +31,8 @@ namespace Diplom_arendacar.Forms
 
         private void Master_FormClosed(object sender, FormClosedEventArgs e)
         {
-            AuthorizationForm frm_logn = new AuthorizationForm();
-            frm_logn.Show();
-            this.Close();
+            Application.OpenForms[0].Show();
+            this.Hide();
 
             bt_end_service.Visible = false;
             bt_end_to.Visible = false;

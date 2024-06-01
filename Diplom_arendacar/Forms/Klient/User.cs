@@ -27,9 +27,8 @@ namespace Diplom_arendacar.Forms
 
         private void User_FormClosed(object sender, FormClosedEventArgs e)
         {
-            AuthorizationForm frm_logn = new AuthorizationForm();
-            frm_logn.Show();
-            this.Close();
+            Application.OpenForms[0].Show();
+            this.Hide();
         }
         
         bool fl_name = false;

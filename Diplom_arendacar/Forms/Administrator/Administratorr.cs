@@ -233,9 +233,8 @@ namespace Diplom_arendacar.Forms
 
         private void Administratorr_FormClosed(object sender, FormClosedEventArgs e)
         {
-            AuthorizationForm frm_logn = new AuthorizationForm();
-            frm_logn.Show();
-            this.Close();
+            Application.OpenForms[0].Show();
+            this.Hide();
         }
 
         private void bt_add_car_Click(object sender, EventArgs e)
