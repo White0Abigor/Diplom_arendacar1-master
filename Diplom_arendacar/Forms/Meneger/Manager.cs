@@ -25,7 +25,7 @@ namespace Diplom_arendacar.Forms
         {
             InitializeComponent();
         }
-        
+        int p;
         private void Manager_Load(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.Greeting > 0)
