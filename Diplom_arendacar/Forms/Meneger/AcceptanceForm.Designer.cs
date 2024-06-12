@@ -100,9 +100,9 @@
             this.label6.ForeColor = System.Drawing.Color.Crimson;
             this.label6.Location = new System.Drawing.Point(10, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(231, 23);
+            this.label6.Size = new System.Drawing.Size(201, 23);
             this.label6.TabIndex = 77;
-            this.label6.Text = "Впишите нынешний пробег:";
+            this.label6.Text = "Впишите новый пробег:";
             // 
             // panel4
             // 

@@ -209,7 +209,7 @@
             this.bt_Choose.Name = "bt_Choose";
             this.bt_Choose.Size = new System.Drawing.Size(140, 33);
             this.bt_Choose.TabIndex = 99;
-            this.bt_Choose.Text = "Добавтить";
+            this.bt_Choose.Text = "Добавить";
             this.bt_Choose.UseVisualStyleBackColor = false;
             this.bt_Choose.Click += new System.EventHandler(this.bt_Choose_Click);
             // 

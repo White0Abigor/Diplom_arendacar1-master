@@ -57,7 +57,7 @@ namespace Diplom_arendacar.Forms
             }
             else if (tb_vin.Text == "")
             {
-                MessageBox.Show(" Вы не заполнили поле VIN-номера");
+                MessageBox.Show(" Вы не заполнили поле VIN-номер");
                 tb_vin.Text = " ";
 
             }
@@ -68,7 +68,7 @@ namespace Diplom_arendacar.Forms
             }
             else if (ap != pa)
             {
-                MessageBox.Show("Вин номер не совпадает!\n Проверьте корктность ввода\n Если VIN-номер введён коректно, позовите старшего менеджера");
+                MessageBox.Show("Вин номер не совпадает!\n Проверьте коректность ввода\n Если VIN-номер введён коректно, позовите старшего менеджера");
             }
             else
             {

@@ -510,7 +510,7 @@
             this.bt_exite.Name = "bt_exite";
             this.bt_exite.Size = new System.Drawing.Size(137, 33);
             this.bt_exite.TabIndex = 152;
-            this.bt_exite.Text = "назад";
+            this.bt_exite.Text = "Назад";
             this.bt_exite.UseVisualStyleBackColor = false;
             this.bt_exite.Click += new System.EventHandler(this.bt_exite_Click);
             // 

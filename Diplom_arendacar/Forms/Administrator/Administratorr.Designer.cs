@@ -255,7 +255,7 @@
             this.bt_maine_add_user.Name = "bt_maine_add_user";
             this.bt_maine_add_user.Size = new System.Drawing.Size(172, 33);
             this.bt_maine_add_user.TabIndex = 69;
-            this.bt_maine_add_user.Text = "Добавтить";
+            this.bt_maine_add_user.Text = "Добавить";
             this.bt_maine_add_user.UseVisualStyleBackColor = false;
             this.bt_maine_add_user.Click += new System.EventHandler(this.bt_maine_add_user_Click);
             // 

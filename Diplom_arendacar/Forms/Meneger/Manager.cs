@@ -230,7 +230,7 @@ namespace Diplom_arendacar.Forms
         {
             if (Convert.ToString(dgw_order_klinet_list.CurrentRow.Cells[9].Value) == "Обрабатываеться")
             {
-                MessageBox.Show("Нельзя выдать не обработануую машинй!");
+                MessageBox.Show("Нельзя выдать не обработануую машину!");
             }
             else
             {
