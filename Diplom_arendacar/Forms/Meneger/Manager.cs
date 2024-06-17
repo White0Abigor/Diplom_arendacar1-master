@@ -94,7 +94,7 @@ namespace Diplom_arendacar.Forms
             cmd1.Open();
             SqlCommand command1 = new SqlCommand();
             command1.CommandType = CommandType.StoredProcedure;
-            command1.CommandText = "list_Order2";
+            command1.CommandText = "list_order2";
             command1.Connection = cmd1;
             using(SqlDataReader red2 = command1.ExecuteReader())
             {
@@ -267,10 +267,11 @@ namespace Diplom_arendacar.Forms
             cmd23.Close();
 
             SqlConnection cmd1 = new SqlConnection(Properties.Settings.Default.ConnectionString);
+
             cmd1.Open();
             SqlCommand command1 = new SqlCommand();
             command1.CommandType = CommandType.StoredProcedure;
-            command1.CommandText = "list_Order2";
+            command1.CommandText = "list_order2";
             command1.Connection = cmd1;
             using (SqlDataReader red2 = command1.ExecuteReader())
             {
