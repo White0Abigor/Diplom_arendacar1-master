@@ -29,7 +29,7 @@ namespace Diplom_arendacar.Forms
         private void GetSettings()
         {
             tb_number.Text = Properties.Settings.Default.Save_number;
-            tb_number.Text = Properties.Settings.Default.Save_password;
+            tb_password_maine.Text = Properties.Settings.Default.Save_password;
         }
 
         private void SaveSettings()
